@@ -44,4 +44,14 @@ def admin_menu():
             break
         else:
             print("Invalid choice. Please select again.")
+
+def Display_Statistics(employees):
+def Add_Employee(employees):
+def display_all_employees(employees):
+def Change_Salary(employees):
+def Remove_Employee(employees):
+def Raise_Salary(employees):
+def save_employee_data(employees):
+
+    
 login()
