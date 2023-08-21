@@ -67,6 +67,17 @@ def Add_Employee(employees):
 
 
 def display_all_employees(employees):
+# https://crtr4u.com/index.php/2023/06/28/python-example-to-sort-employee-by-multiple-properties/
+    sorted_employees = sorted(employees.values(), key=lambda emp: emp["timestamp"], reverse=True)
+    for emp in sorted_employees:
+        print(f"Employee ID: {emp['emp_id']}")
+        print(f"Username: {emp['username']}")
+        print(f"Joining Date: {emp['timestamp']}")
+        print(f"Gender: {emp['gender']}")
+        print(f"Salary: {emp['salary']}")
+        print()
+
+
 def Change_Salary(employees):
 def Remove_Employee(employees):
 def Raise_Salary(employees):
