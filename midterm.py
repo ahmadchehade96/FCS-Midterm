@@ -79,6 +79,16 @@ def display_all_employees(employees):
 
 
 def Change_Salary(employees):
+    emp_id = input("Enter the Employee ID whose salary you want to change: ")
+    new_salary = int(input("Enter the new salary: "))
+
+    if emp_id in employees:
+        employees[emp_id]["salary"] = new_salary
+        print("Salary changed successfully.")
+    else:
+        print("Employee not found.")
+
+
 def Remove_Employee(employees):
 def Raise_Salary(employees):
 def save_employee_data(employees):
