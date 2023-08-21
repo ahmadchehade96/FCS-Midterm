@@ -1,4 +1,5 @@
 #https://stackoverflow.com/questions/47202331/python-username-and-password-with-3-attempts
+from datetime import datetime
 def login():
     attempts = 0
     while attempts < 5:
@@ -46,12 +47,31 @@ def admin_menu():
             print("Invalid choice. Please select again.")
 
 def Display_Statistics(employees):
+
+#https://stackoverflow.com/questions/71030855/print-details-of-an-employee-by-entering-the-name-of-employee-in-python
 def Add_Employee(employees):
+    def Add_Employee(employees):
+        username = input("Enter new employee's username: ")
+        gender = input("Enter employee's gender (male/female): ")
+        salary = int(input("Enter employee's salary: "))
+        emp_id = f"emp{len(employees) + 1:03}"
+        timestamp = datetime.today().strftime("%Y%m%d")
+        employees[emp_id] = {
+            "username": username,
+            "emp_id": emp_id,
+            "timestamp": timestamp,
+            "gender": gender,
+            "salary": salary
+        }
+        print("Employee added successfully.")
+
+
 def display_all_employees(employees):
 def Change_Salary(employees):
 def Remove_Employee(employees):
 def Raise_Salary(employees):
 def save_employee_data(employees):
+def load_employee_data():
 
-    
+
 login()
